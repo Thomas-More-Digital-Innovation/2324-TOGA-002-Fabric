@@ -157,23 +157,6 @@
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGOXEwiSmO+kz8=",
-											"_parent": {
-												"$ref": "AAAAAAGOW/qBdC7lpSk="
-											},
-											"model": {
-												"$ref": "AAAAAAGOXEwiQGO7yu0="
-											},
-											"font": "Arial;13;0",
-											"left": 405,
-											"top": 388,
-											"width": 238,
-											"height": 13,
-											"text": "dateID: int FK2",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
 											"_id": "AAAAAAGOXAvRVy9ovQ8=",
 											"_parent": {
 												"$ref": "AAAAAAGOW/qBdC7lpSk="
@@ -183,10 +166,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 405,
-											"top": 403,
+											"top": 388,
 											"width": 238,
 											"height": 13,
-											"text": "productID: int FK3",
+											"text": "productID: int FK2",
 											"horizontalAlignment": 0
 										},
 										{
@@ -200,10 +183,27 @@
 											},
 											"font": "Arial;13;0",
 											"left": 405,
+											"top": 403,
+											"width": 238,
+											"height": 13,
+											"text": "resellerID: int FK3",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGOXEwiSmO+kz8=",
+											"_parent": {
+												"$ref": "AAAAAAGOW/qBdC7lpSk="
+											},
+											"model": {
+												"$ref": "AAAAAAGOXEwiQGO7yu0="
+											},
+											"font": "Arial;13;0",
+											"left": 405,
 											"top": 418,
 											"width": 238,
 											"height": 13,
-											"text": "resellerID: int FK4",
+											"text": "dateID: int FK4",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2509,7 +2509,7 @@
 											"top": 493,
 											"width": 130.42529296875,
 											"height": 13,
-											"text": "employeeID: int FK6",
+											"text": "employeeID: int FK8",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2526,7 +2526,7 @@
 											"top": 508,
 											"width": 130.42529296875,
 											"height": 13,
-											"text": "dateID: int FK7",
+											"text": "dateID: int FK9",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4032,7 +4032,7 @@
 											"top": 135,
 											"width": 163.26806640625,
 											"height": 13,
-											"text": "EmployeeRegionBridge"
+											"text": "Bridge_EmployeeRegion"
 										},
 										{
 											"_type": "LabelView",
@@ -4092,19 +4092,19 @@
 									"subViews": [
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGOeeZRdORQyc0=",
+											"_id": "AAAAAAGOehzI1mhx9vU=",
 											"_parent": {
 												"$ref": "AAAAAAGOed/s7SUp/Tk="
 											},
 											"model": {
-												"$ref": "AAAAAAGOeeZRZOQ4uoM="
+												"$ref": "AAAAAAGOehzIyGhZ614="
 											},
 											"font": "Arial;13;0",
 											"left": 653,
 											"top": 158,
 											"width": 163.26806640625,
 											"height": 13,
-											"text": "employeeID: int FK PK",
+											"text": "employeeRegionID int PK",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4121,7 +4121,24 @@
 											"top": 173,
 											"width": 163.26806640625,
 											"height": 13,
-											"text": "regionID: int FK PK",
+											"text": "regionID: int FK6",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGOeeZRdORQyc0=",
+											"_parent": {
+												"$ref": "AAAAAAGOed/s7SUp/Tk="
+											},
+											"model": {
+												"$ref": "AAAAAAGOeeZRZOQ4uoM="
+											},
+											"font": "Arial;13;0",
+											"left": 653,
+											"top": 188,
+											"width": 163.26806640625,
+											"height": 13,
+											"text": "employeeID: int FK7",
 											"horizontalAlignment": 0
 										}
 									],
@@ -4129,7 +4146,7 @@
 									"left": 648,
 									"top": 153,
 									"width": 173.26806640625,
-									"height": 38
+									"height": 53
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -4830,21 +4847,12 @@
 						},
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAGOXEwiQGO7yu0=",
-							"_parent": {
-								"$ref": "AAAAAAGOW/qBcS7dj1c="
-							},
-							"name": "dateID",
-							"type": "int FK2"
-						},
-						{
-							"_type": "UMLAttribute",
 							"_id": "AAAAAAGOXAvRUC9lbCc=",
 							"_parent": {
 								"$ref": "AAAAAAGOW/qBcS7dj1c="
 							},
 							"name": "productID",
-							"type": "int FK3"
+							"type": "int FK2"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -4853,6 +4861,15 @@
 								"$ref": "AAAAAAGOW/qBcS7dj1c="
 							},
 							"name": "resellerID",
+							"type": "int FK3"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGOXEwiQGO7yu0=",
+							"_parent": {
+								"$ref": "AAAAAAGOW/qBcS7dj1c="
+							},
+							"name": "dateID",
 							"type": "int FK4"
 						},
 						{
@@ -5420,7 +5437,7 @@
 								"$ref": "AAAAAAGOXB5wHllxWVk="
 							},
 							"name": "employeeID",
-							"type": "int FK6"
+							"type": "int FK8"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -5429,7 +5446,7 @@
 								"$ref": "AAAAAAGOXB5wHllxWVk="
 							},
 							"name": "dateID",
-							"type": "int FK7"
+							"type": "int FK9"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -5512,7 +5529,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "EmployeeRegionBridge",
+					"name": "Bridge_EmployeeRegion",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
@@ -5546,12 +5563,11 @@
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAGOeeZRZOQ4uoM=",
+							"_id": "AAAAAAGOehzIyGhZ614=",
 							"_parent": {
 								"$ref": "AAAAAAGOed/s6yUhW0Q="
 							},
-							"name": "employeeID",
-							"type": "int FK PK"
+							"name": "employeeRegionID int PK"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -5560,7 +5576,16 @@
 								"$ref": "AAAAAAGOed/s6yUhW0Q="
 							},
 							"name": "regionID",
-							"type": "int FK PK"
+							"type": "int FK6"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGOeeZRZOQ4uoM=",
+							"_parent": {
+								"$ref": "AAAAAAGOed/s6yUhW0Q="
+							},
+							"name": "employeeID",
+							"type": "int FK7"
 						}
 					]
 				}
