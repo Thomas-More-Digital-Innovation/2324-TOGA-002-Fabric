@@ -40,9 +40,10 @@ Vervolgens werden we geïnformeerd over de werkwijze in ToGaether:
 **Wat gebeurt er:**
 
 - In de Gold Layer worden de gegevens verder getransformeerd naar een model dat geschikt is voor specifieke analytische toepassingen of rapportages.
-- Dit kan bestaan uit geaggregeerde tabellen, kant-en-klare datasets, of gestroomlijnde weergaven die zijn geoptimaliseerd voor prestaties.
-- Vaak worden hier specifieke KPI's of rapportagedata voorbereid, zodat eindgebruikers gemakkelijk toegang hebben tot relevante informatie zonder extra verwerking.
+- Dit kan bestaan uit geaggregeerde tabellen, datasets, of gestroomlijnde weergaven die zijn geoptimaliseerd voor prestaties (denk aan OLAP).
 - Deze laag is ontworpen voor gebruik door BI-tools en dashboards, en bevat dus alleen data die direct nuttig is voor de business.
+
+#### In deze repo zijn al onze notebooks terug te vinden onder `documentatie\notebooks`, hier werken we deze stappen van bronze naar gold uit.
 
 #
 
